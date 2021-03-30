@@ -1,9 +1,42 @@
-table {
-    border-collapse: collapse;
-    margin: 15px 0;
+* {
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+}
+.boundary{
+    display: flex;
+    border: solid darkred;
 }
 
-td, th {
-    border: 1px solid black;
-    padding: 5px 10px;
+.coffee-container{
+    display: flex;
+    border: solid darkblue;
+    height: 28em;
+    width: 30em;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+.coffee-items{
+    display: inline;
+    background: paleturquoise;
+    border: 2px solid #F9EFD6;
+    padding: 1em;
+    height: 8em;
+    width:12em;
+    font-size: 10px;
+
+}
+
+.coffee-selections{
+    display: block;
+    border: solid darkgreen;
+    width: 30em;
+    text-align: center;
+    position: relative;
+    left: 25%
+
 }
