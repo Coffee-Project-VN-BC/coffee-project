@@ -20,7 +20,7 @@ h1{
 
 }
 
-.coffee-items{
+.coffee{
     display: inline;
     background: paleturquoise;
     border: 2px solid #F9EFD6;
@@ -34,9 +34,9 @@ h1{
 .coffee-selections{
     display: block;
     border: solid darkgreen;
-    width: 30em;
-    text-align: center;
+    width: 28em;
+    text-align: left;
     position: relative;
-    left: 25%
+    left: 29%
 
 }
