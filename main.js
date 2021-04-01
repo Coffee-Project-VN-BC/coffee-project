@@ -40,7 +40,7 @@ function updateCoffees(e) {
             filteredCoffees.push(coffee);
         }
     });
-    tbody.innerHTML = renderCoffees(filteredCoffees);
+    coffeeList.innerHTML = renderCoffees(filteredCoffees);
     //innerHTML is the content within the open/close tags
 }
 
@@ -54,7 +54,7 @@ function searchCoffees() {
             console.log(filteredCoffees);
         }
     });
-    tbody.innerHTML = renderCoffees(filteredCoffees);
+    coffeeList.innerHTML = renderCoffees(filteredCoffees);
 }
 
 // from http://www.ncausa.org/About-Coffee/Coffee-Roasts-Guide
@@ -76,12 +76,12 @@ var coffees = [
 ];
 
 // The querySelector() allows you to find the first element that matches one or more CSS selectors.
-var tbody = document.querySelector('#coffees');
+var coffeeList = document.querySelector('#coffees');
 var submitButton = document.querySelector('#submit');
 var roastSelection = document.querySelector('#roast-selection');
-var searchBox = document.querySelector('#input-brand');
+var searchBox = document.querySelector('#input-blend');
 
 //These are the events:
-tbody.innerHTML = renderCoffees(coffees);
+coffeeList.innerHTML = renderCoffees(coffees);
 submitButton.addEventListener('click', updateCoffees);
 searchBox.addEventListener('keyup', searchCoffees);
